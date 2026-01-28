@@ -36,3 +36,13 @@ Para trabajar con conjuntos de datos grandes, sigue estos consejos para optimiza
   total_patients <- 1200
   total_physicians <- 10
   average_patients <- total_patients / total_physicians
+  ```
+- **Mezclar tipos de datos incorrectamente**: Evita errores al intentar sumar números y texto directamente. Usa paste() para combinar texto y números:
+
+  ```r
+  temperature <- 37.5
+  unit <- "Celsius"
+  reading <- paste(temperature, unit)
+  ```
+---
+Siguiendo estas prácticas, tu código en R será más eficiente, claro y fácil de mantener, ayudando a prevenir errores comunes y optimizando el rendimiento al trabajar con grandes cantidades de datos.
