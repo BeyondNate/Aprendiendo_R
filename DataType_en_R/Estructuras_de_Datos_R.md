@@ -15,3 +15,13 @@ Los **vectores** son colecciones de elementos del mismo tipo de datos (números,
   ```r
     vector <- c(1, 2, 3, 4, 5)
   ```
+Podemos multiplicar todo el vector como se hace en matemáticas
+ ```r
+vector1 <- c(1, 2, 3, 4, 5) * 2
+#Si sale bien debería duplicarte el vector
+```
+Tambien podemos usar un elemento de vector y ubicarlo rapidamente
+```r
+vector[2]
+```
+Los vectores son altamente eficientes para realizar cálculos rápidos cuando los datos tienen un tipo uniforme. Si tus datos consisten en elementos del mismo tipo y requieren operaciones simples, los vectores son la mejor opción.
