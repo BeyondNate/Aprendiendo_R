@@ -40,3 +40,10 @@ lista <-  list(
 
 #Puedes Printearlo para comprobarlo
 ```
+
+Para ubicar un elemento de la lista podemos ubicarlo por el nombre
+```r
+lista[["nombre"]]
+```
+
+Con esto ya puedes crear tus propios ejemplos!
