@@ -157,6 +157,13 @@ empleados_fulltime <- subset(empleados, fulltime == TRUE & age > 18)
 print(empleados_fulltime)
 ```
 
+### **Borrar una columna**
+```r
+empleados$salary <- NULL
+print(empleados)
+```
+
+
 ## **Resumen**:
 
 - Matrices: Son útiles para cálculos rápidos con datos numéricos homogéneos.
