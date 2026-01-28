@@ -29,3 +29,14 @@ Los vectores son altamente eficientes para realizar cálculos rápidos cuando lo
 
 ### **Listas**
 Las listas en R son estructuras muy flexibles que permiten almacenar distintos tipos de datos en un solo contenedor, como si estuvieras guardando objetos variados en una caja. Puedes incluir otros tipos de datos, e incluso otras listas dentro de ellas. Para crear una lista, usas la función **`list()`**.
+
+```r
+lista <-  list(
+  nombre <- "Juan"
+  edad <- 19
+  buenEmpleado <- TRUE
+  notas <- c(10,12,14)
+)
+
+#Puedes Printearlo para comprobarlo
+```
