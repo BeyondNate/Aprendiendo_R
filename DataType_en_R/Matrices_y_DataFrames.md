@@ -23,6 +23,16 @@ sales_matrix <- matrix(
 
 print(sales_matrix)
 ```
+Hay otra forma de crearlo pero es algo más mecanico
+```r
+i = matrix(1:9, nrow = 3, ncol =3)
+
+#Resultado Esperado
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+```
 La Matriz sales_matrix tiene 2 filas (representando 2 períodos) y 3 columnas (representando diferentes regiones):
 ```r
      [,1] [,2] [,3]
