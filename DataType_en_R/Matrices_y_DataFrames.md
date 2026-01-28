@@ -14,7 +14,7 @@ Las **matrices** son estructuras bidimensionales (filas y columnas) que almacena
 Usas la función **`matrix()`** para crear una matriz, proporcionando un vector de datos y las dimensiones (número de filas y columnas).
 
 ```r
-```r
+
 sales_matrix <- matrix(
   c(12000, 15000, 17000, 18000, 13000, 19000),
   nrow = 2, 
@@ -94,7 +94,7 @@ dim(sales_matrix)          # Devuelve las dimensiones de la matriz original (2, 
 dim(matriz_transportado)   # Devuelve las dimensiones de la matriz transpuesta (3, 2)
 
 ```
-Tip: Las matrices son muy eficientes para realizar operaciones matemáticas rápidas y trabajar con datos numéricos. Si trabajas con cálculos matemáticos complejos, las matrices son la mejor opción.
+- Tip: Las matrices son muy eficientes para realizar operaciones matemáticas rápidas y trabajar con datos numéricos. Si trabajas con cálculos matemáticos complejos, las matrices son la mejor opción.
 ---
 
 ## **Data Frames**
