@@ -32,9 +32,9 @@ Las listas en R son estructuras muy flexibles que permiten almacenar distintos t
 
 ```r
 lista <-  list(
-  nombre <- "Juan"
-  edad <- 19
-  buenEmpleado <- TRUE
+  nombre <- "Juan",
+  edad <- 19,
+  buenEmpleado <- TRUE,
   notas <- c(10,12,14)
 )
 
