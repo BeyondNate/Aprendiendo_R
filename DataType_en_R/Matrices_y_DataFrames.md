@@ -104,6 +104,84 @@ dim(sales_matrix)          # Devuelve las dimensiones de la matriz original (2, 
 dim(matriz_transportado)   # Devuelve las dimensiones de la matriz transpuesta (3, 2)
 
 ```
+# Teoría sobre el Uso de `rownames()` y `colnames()` en Matrices en R
+
+En R, las **matrices** son estructuras bidimensionales que almacenan datos de manera ordenada en filas y columnas. Sin embargo, por defecto, las matrices no tienen nombres para sus filas y columnas. Para hacer que las matrices sean más legibles y comprensibles, podemos asignar **nombres** a las filas y columnas utilizando las funciones **`rownames()`** y **`colnames()`**.
+
+## **1. Asignar nombres a las filas (`rownames()`) y columnas (`colnames()`)**
+
+Las funciones **`rownames()`** y **`colnames()`** permiten etiquetar las filas y las columnas de una matriz, lo que facilita su comprensión y manipulación. Al asignar nombres a las filas y columnas, se mejora la legibilidad y se pueden realizar referencias más claras en el análisis de datos.
+
+### **Ejemplo**:
+
+Supongamos que tenemos la siguiente matriz de inventario de productos, donde almacenamos las cantidades de **Teclados**, **Ratones** y **Monitores** en diferentes ubicaciones: **Universidad**, **Mercado** y **Banco**.
+
+```r
+Inventario <- matrix(
+    c(4, 10, 10,   # Keyboard
+      5, 1, 90,    # Mouse
+      56, 94, 45), # Monitor
+    nrow = 3,
+    byrow = TRUE   # Llenar fila por fila
+)
+
+#La matriz original se verá así:
+     [,1] [,2] [,3]
+[1,]    4   10   10
+[2,]    5    1   90
+[3,]   56   94   45
+
+
+```
+### **Asignar nombres a las filas y columnas**:
+
+### Asignar nombres a las filas con rownames():
+
+
+- Usamos rownames(Inventario) para asignar los nombres de las filas. En este caso, asignamos los nombres de los empleados (Anderson, Paola, Vidal).
+
+### Asignar nombres a las columnas con colnames():
+
+- Usamos colnames(Inventario) para asignar los nombres de las columnas. En este caso, las columnas se etiquetan como Universidad, Mercado y Banco.
+
+```r
+rownames(Inventario) <- c("Anderson", "Paola", "Vidal")
+colnames(Inventario) <- c("Universidad", "Mercado", "Banco")
+
+#Resultado
+          Universidad Mercado Banco
+Anderson           4     10    10
+Paola              5      1    90
+Vidal             56     94    45
+
+
+```
+### **¿Qué significa byrow = TRUE?**
+
+El parámetro byrow = TRUE en la función matrix() indica que los valores proporcionados deben ser organizados fila por fila en lugar de columna por columna (que es el comportamiento predeterminado de R).
+
+- byrow = TRUE: Los valores del vector se distribuyen en las filas de la matriz de izquierda a derecha, fila por fila.
+- byrow = FALSE (valor predeterminado): Los valores del vector se distribuyen en las columnas de la matriz, es decir, R llena la primera columna primero, luego la segunda, y así sucesivamente.
+
+Ejemplo con byrow = TRUE:
+
+Si tenemos el siguiente vector de datos:
+
+```r
+Inventario <- matrix(
+    c(4, 10, 10, 5, 1, 90, 56, 94, 45),
+    nrow = 3,
+    byrow = TRUE
+)
+
+```
+
+R organizará los valores de la siguiente manera (fila por fila):
+
+- Fila 1: 4, 10, 10 (correspondiente a la primera fila)
+- Fila 2: 5, 1, 90 (correspondiente a la segunda)
+- Fila 3: 56, 94, 45 (correspondiente a la tercera)
+
 - Tip: Las matrices son muy eficientes para realizar operaciones matemáticas rápidas y trabajar con datos numéricos. Si trabajas con cálculos matemáticos complejos, las matrices son la mejor opción.
 ---
 
