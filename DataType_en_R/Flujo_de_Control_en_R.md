@@ -1,4 +1,4 @@
-**Flujo de Control en R: Entendiendo el Flujo de Control para Hacer tus Scripts de R Más Poderosos**
+#**Flujo de Control en R: Entendiendo el Flujo de Control para Hacer tus Scripts de R Más Poderosos**
 
 Cuando escribimos scripts en R, generalmente los comandos se ejecutan línea por línea desde la parte superior del código hacia abajo. Pero ¿qué pasa si necesitamos que nuestro script sea más flexible y responda a diferentes situaciones, condiciones o conjuntos de datos automáticamente? Aquí es donde entra en juego el "flujo de control". El flujo de control ayuda a establecer reglas claras para que tu código pueda:
 
