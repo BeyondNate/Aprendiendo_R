@@ -1,4 +1,4 @@
-**Funciones en R:**
+# **Funciones en R:**
 
 Las **funciones** en R permiten agrupar un conjunto de comandos relacionados en una unidad que puede ser reutilizada, lo que mejora la claridad, la simplicidad y facilita el mantenimiento del código.
 
